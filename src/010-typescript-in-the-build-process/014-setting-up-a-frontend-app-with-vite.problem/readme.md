@@ -17,3 +17,27 @@ See if you can find a way to set up a Vite app. You'll need to:
 - Take a look at their getting started guide
 - Delete all our existing code
 - Create a new vite app in its place
+
+## Solution
+
+To setup a Vite app, you can follow these steps:
+
+1. Visit the [Vite documentation](https://vitejs.dev/).
+2. Run the following command in your terminal to create a new Vite app:
+
+```bash
+pnpm create vite
+```
+3. Follow the prompts to choose a framework (e.g., React, Vue, etc.) and a project name.
+4. Once the project is created, navigate into the project directory
+5. Install the dependencies by running:
+
+```bash
+pnpm install
+```
+6. Start the development server with:
+
+```bash
+pnpm run dev
+```
+7. Open your browser and navigate to the provided local URL (usually `http://localhost:5173`) to see your new Vite app in action.
