@@ -1,7 +1,9 @@
 {
+  // TypeScript 5.9.x reference config with defaults.
+  // Common options are enabled; uncommon options are commented out with defaults.
   "compilerOptions": {
-    "target": "ES2022",
-    "module": "ESNext",
+    "target": "es2024",
+    "module": "esnext",
     "moduleResolution": "Bundler",
     "noEmit": true,
     "isolatedModules": true,
@@ -12,9 +14,165 @@
     "skipLibCheck": true,
     "declaration": true,
     "declarationMap": true,
-    "sourceMap": true
+    "sourceMap": true,
+
+    // Modules
+    // "allowArbitraryExtensions": false,
+    // "allowImportingTsExtensions": false,
+    // "allowUmdGlobalAccess": false,
+    // "baseUrl": "./",
+    // "customConditions": [],
+    // "module": "commonjs", // default: undefined (implied commonjs)
+    // "moduleResolution": "node10", // default: depends on module, typically "node10"
+    // "moduleSuffixes": [],
+    // "noResolve": false,
+    // "noUncheckedSideEffectImports": false,
+    // "paths": {},
+    // "resolveJsonModule": false,
+    // "resolvePackageJsonExports": false, // default: true for node16/nodenext/bundler
+    // "resolvePackageJsonImports": false, // default: true for node16/nodenext/bundler
+    // "rewriteRelativeImportExtensions": false,
+    // "rootDir": "./",
+    // "rootDirs": [],
+    // "typeRoots": [],
+    // "types": [],
+
+    // JavaScript support
+    // "allowJs": false,
+    // "checkJs": false,
+    // "maxNodeModuleJsDepth": 0,
+
+    // Interop constraints
+    // "allowSyntheticDefaultImports": false, // default: module === "system" or esModuleInterop
+    // "erasableSyntaxOnly": false,
+    // "forceConsistentCasingInFileNames": true,
+    // "isolatedDeclarations": false,
+    // "preserveSymlinks": false,
+    // "verbatimModuleSyntax": false,
+
+    // Type checking
+    // "allowUnreachableCode": false, // default: undefined
+    // "allowUnusedLabels": false, // default: undefined
+    // "alwaysStrict": false, // default: false unless strict
+    // "exactOptionalPropertyTypes": false,
+    // "noFallthroughCasesInSwitch": false,
+    // "noImplicitAny": false, // default: false unless strict
+    // "noImplicitOverride": false,
+    // "noImplicitReturns": false,
+    // "noImplicitThis": false, // default: false unless strict
+    // "noPropertyAccessFromIndexSignature": false,
+    // "noUnusedLocals": false,
+    // "noUnusedParameters": false,
+    // "strictBindCallApply": false, // default: false unless strict
+    // "strictBuiltinIteratorReturn": false, // default: false unless strict
+    // "strictFunctionTypes": false, // default: false unless strict
+    // "strictNullChecks": false, // default: false unless strict
+    // "strictPropertyInitialization": false, // default: false unless strict
+    // "useUnknownInCatchVariables": false, // default: false unless strict
+
+    // Watch/build modes
+    // "assumeChangesOnlyAffectDirectDependencies": false,
+
+    // Backwards compatibility
+    // "charset": "utf8",
+    // "importsNotUsedAsValues": "remove",
+    // "keyofStringsOnly": false,
+    // "noImplicitUseStrict": false,
+    // "noStrictGenericChecks": false,
+    // "out": "./dist/bundle.js", // deprecated, use outFile
+    // "preserveValueImports": false,
+    // "suppressExcessPropertyErrors": false,
+    // "suppressImplicitAnyIndexErrors": false,
+
+    // Projects
+    // "composite": false,
+    // "disableReferencedProjectLoad": false,
+    // "disableSolutionSearching": false,
+    // "disableSourceOfProjectReferenceRedirect": false,
+    // "incremental": false, // default: false unless composite
+    // "tsBuildInfoFile": ".tsbuildinfo",
+
+    // Emit
+    // "declaration": false, // default: false unless composite
+    // "declarationDir": "./types",
+    // "declarationMap": false,
+    // "downlevelIteration": false,
+    // "emitBOM": false,
+    // "emitDeclarationOnly": false,
+    // "importHelpers": false,
+    // "inlineSourceMap": false,
+    // "inlineSources": false,
+    // "mapRoot": "./",
+    // "newLine": "lf",
+    // "noEmit": false,
+    // "noEmitHelpers": false,
+    // "noEmitOnError": false,
+    // "outDir": "./dist",
+    // "outFile": "./dist/bundle.js",
+    // "preserveConstEnums": false,
+    // "removeComments": false,
+    // "sourceMap": false,
+    // "sourceRoot": "./",
+    // "stripInternal": false,
+
+    // Compiler diagnostics
+    // "diagnostics": false,
+    // "explainFiles": false,
+    // "extendedDiagnostics": false,
+    // "generateCpuProfile": "profile.cpuprofile",
+    // "generateTrace": "./trace",
+    // "listEmittedFiles": false,
+    // "listFiles": false,
+    // "noCheck": false,
+    // "traceResolution": false,
+
+    // Editor support
+    // "disableSizeLimit": false,
+    // "plugins": [],
+
+    // Language and environment
+    // "emitDecoratorMetadata": false,
+    // "experimentalDecorators": false,
+    // "jsx": "react-jsx",
+    // "jsxFactory": "React.createElement",
+    // "jsxFragmentFactory": "React.Fragment",
+    // "jsxImportSource": "react",
+    // "lib": [],
+    // "libReplacement": true,
+    // "noLib": false,
+    // "reactNamespace": "React",
+    // "target": "es5",
+    // "useDefineForClassFields": true, // default: true for ES2022 and above
+
+    // Output formatting
+    // "noErrorTruncation": false,
+    // "preserveWatchOutput": false,
+    // "pretty": true,
+
+    // Completeness
+    // "skipDefaultLibCheck": false
   },
-  "include": [
-    "src"
-  ]
+
+  // Project structure
+  "include": ["src"]
+  // "exclude": ["node_modules", "dist"],
+  // "files": [],
+  // "extends": "./tsconfig.base.json",
+  // "references": [],
+
+  // Additional tsconfig options
+  // "compileOnSave": false,
+  // "typeAcquisition": {
+  //   "enable": false,
+  //   "include": [],
+  //   "exclude": []
+  // },
+  // "watchOptions": {
+  //   "watchFile": "usefsevents",
+  //   "watchDirectory": "usefsevents",
+  //   "fallbackPolling": "priorityinterval",
+  //   "synchronousWatchDirectory": false,
+  //   "excludeDirectories": [],
+  //   "excludeFiles": []
+  // }
 }
