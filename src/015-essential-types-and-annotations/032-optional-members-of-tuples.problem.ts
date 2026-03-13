@@ -1,6 +1,7 @@
 import { Expect, Equal } from "@total-typescript/helpers";
 
-const goToLocation = (coordinates: Array<number>) => {
+// it can also be expressed as [lat: number, lon: number, ele?: number]
+const goToLocation = (coordinates: [number, number,  number?]) => {
   const latitude = coordinates[0];
   const longitude = coordinates[1];
   const elevation = coordinates[2];
