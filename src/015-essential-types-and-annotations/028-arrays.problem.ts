@@ -1,8 +1,16 @@
 // CODE
 
 // How do we type 'items' in the ShoppingCart?
+/* Solution 1 */
+// type ShoppingCart = {
+//   userId: string;
+//   items: string[];
+// };
+
+/* Solution 2 */
 type ShoppingCart = {
   userId: string;
+  items: Array<string>;
 };
 
 // TESTS
