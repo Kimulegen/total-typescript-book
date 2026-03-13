@@ -1,6 +1,31 @@
+/* solution 1 */
+// type Recipe = {
+//   title: string;
+//   instructions: string;
+//   ingredients: { name: string; quantity: string}[]
+// };
+
+/* solution 2 */
+// type Recipe = {
+  // title: string;
+  // instructions: string;
+  // ingredients: Array<{ name: string; quantity: string}>
+// };
+
+/* solution 3 */
+// type Ingredient = { name: string; quantity: string}
+// type Recipe = {
+//   title: string;
+//   instructions: string;
+//   ingredients: Ingredient[]
+// };
+
+/* solution 4 */
+type Ingredient = { name: string; quantity: string}
 type Recipe = {
   title: string;
   instructions: string;
+  ingredients: Array<Ingredient>
 };
 
 const processRecipe = (recipe: Recipe) => {
