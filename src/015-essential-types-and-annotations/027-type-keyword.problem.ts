@@ -1,14 +1,21 @@
 import { Expect, Equal } from "@total-typescript/helpers";
 import { expect, it } from "vitest";
 
-const getRectangleArea = (rectangle: { width: number; height: number }) => {
+/* Solution 1 */
+type Rectangle = { width: number; height: number}
+
+/* Solution 2 */
+// interface Rectangle {
+//   width: number;
+//   height: number;
+// }
+
+
+const getRectangleArea = (rectangle: Rectangle) => {
   return rectangle.width * rectangle.height;
 };
 
-const getRectanglePerimeter = (rectangle: {
-  width: number;
-  height: number;
-}) => {
+const getRectanglePerimeter = (rectangle: Rectangle) => {
   return 2 * (rectangle.width + rectangle.height);
 };
 
