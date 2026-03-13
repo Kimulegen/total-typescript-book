@@ -1,6 +1,7 @@
 import { Expect, Equal } from "@total-typescript/helpers";
 
-const setRange = (range: Array<number>) => {
+// it also can be expressed as [x: number, y: number]
+const setRange = (range: [number, number]) => {
   const x = range[0];
   const y = range[1];
 
