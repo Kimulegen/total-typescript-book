@@ -1,7 +1,11 @@
 // CODE
 
-const userIds = new Set();
+/* Solution 1 */
+// const userIds = new Set<number>();
 
+
+/* Solution 2 */
+const userIds: Set<number> = new Set();
 // TESTS
 
 userIds.add(1);
