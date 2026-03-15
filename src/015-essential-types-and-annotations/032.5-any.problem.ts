@@ -1,8 +1,14 @@
 import { expect, it } from "vitest";
 
-const handleFormData = (e: any) => {
+const handleFormData = (e: SubmitEvent) => {
   e.preventDefault();
-  const data = new FormData(e.terget);
+  const formElement = e.currentTarget;
+
+  if (!(formElement instanceof HTMLFormElement)) {
+    throw new Error("Expected a form element");
+  }
+
+  const data = new FormData(formElement);
   const value = Object.fromEntries(data.entries());
   return value;
 };
