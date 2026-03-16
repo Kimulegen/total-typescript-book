@@ -1,10 +1,9 @@
 import { Expect, Equal } from "@total-typescript/helpers";
 import { expect, it } from "vitest";
 
-const parsedData = JSON.parse<{
-  name: string;
-  age: number;
-}>('{"name": "Alice", "age": 30}');
+type User = { name: string, age: number }
+
+const parsedData = JSON.parse('{"name": "Alice", "age": 30}') as User;
 
 type test = Expect<
   Equal<
