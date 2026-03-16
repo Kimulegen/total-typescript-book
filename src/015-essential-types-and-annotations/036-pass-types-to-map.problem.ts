@@ -1,6 +1,18 @@
 // CODE
 
-const userMap = new Map();
+/* Solution 1 */
+// const userMap = new Map<number, { name: string, age: number }>();
+
+/* Solution 2 */
+// type User = { name: string, age: number}
+// const userMap = new Map<number, User>();
+
+/* Solution 3 */
+// const userMap: Map<number, { name: string, age: number}> = new Map();
+
+/* Solution 4 */
+type User = { name: string, age: number}
+const userMap: Map<number, User> = new Map();
 
 // TESTS
 
