@@ -1,11 +1,5 @@
 import {
-  MAX_PAGE,
-  DEFAULT_COLOR,
-  DEFAULT_FILTER,
-  DEFAULT_PAGE,
-  DEFAULT_SORT,
-  DEFAULT_USERNAME,
-  FILTER_OPTIONS,
+  MAX_PAGE
 } from "./dummy-import-2";
 
 const handlePage = (page: number) => {
@@ -13,3 +7,6 @@ const handlePage = (page: number) => {
     console.log("Page is too large!");
   }
 };
+
+/* Solution */
+// Use Shift + Alt + O to Organiza imports
